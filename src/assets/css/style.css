@@ -1,0 +1,59 @@
+.main_content {
+ height: 100vh;
+}
+
+input.invalid {
+ border-color: red;
+}
+.invalid-error {
+ width: 100%;
+ margin-top: 0.25rem;
+ font-size: 0.875em;
+ color: #dc3545;
+}
+
+/* Button Loader */
+.btn{
+  position: relative;
+}
+.is-loading::after {
+ -webkit-animation: spinAround 500ms infinite linear;
+ animation: spinAround 500ms infinite linear;
+ border: 2px solid #e9e9e9;
+ border-radius: 290486px;
+ border-right-color: transparent;
+ border-top-color: transparent;
+ content: "";
+ display: block;
+ height: 1em;
+ position: relative;
+ width: 1em;
+}
+@-webkit-keyframes spinAround {
+ from {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+ }
+ to {
+  -webkit-transform: rotate(359deg);
+  transform: rotate(359deg);
+ }
+}
+@keyframes spinAround {
+ from {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+ }
+ to {
+  -webkit-transform: rotate(359deg);
+  transform: rotate(359deg);
+ }
+}
+.is-loading {
+  color: transparent !important;
+  pointer-events: none; }
+  .is-loading::after {
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    position: absolute !important; }
