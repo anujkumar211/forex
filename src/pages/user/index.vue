@@ -72,11 +72,11 @@ export default {
     if (valid) {
      this.loading = true;
      const { data } = await api.loginin({
-      email: this.user.email,
-      password: this.user.password,
+      email: "eve.holt@reqres.in",
+      password: "cityslicka",
      });
      this.$store.dispatch("SET_TOKEN", data.token);
-     this.$router.push("/home");
+     this.$router.push("/user");
      this.loading = false;
     }
    } catch (error) {

@@ -12,6 +12,11 @@ input.invalid {
  color: #dc3545;
 }
 
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Button Loader */
 .btn{
   position: relative;
@@ -57,3 +62,5 @@ input.invalid {
     left: calc(50% - (1em / 2));
     top: calc(50% - (1em / 2));
     position: absolute !important; }
+
+
